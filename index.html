@@ -1,5 +1,15 @@
 <html>
   <h1>Spring test</h1>
-  <input type="text" placeholder="Massa">
-  <input type="text" placeholder="Uitrekking">
+  
+  <script>
+    function test(){
+      Alert(document.getElementById("massText").value);
+    }
+  </script>
+  
+  <div>
+    <input type="text" placeholder="Massa" name="massText"> <h3>gram</h3> <br>
+    <input type="text" placeholder="Uitrekking" name="uirekkingText"> <h3>cm</h3> <br>\
+    <button onClick="test();">Test</button>
+  </div>
   
