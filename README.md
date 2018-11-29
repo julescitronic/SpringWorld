@@ -1,4 +1,4 @@
 # SpringWorld
-An experiment by Jules Hummelink for school
-View it on:
-github.io/julescitronic/springworld
+An experiment by Jules Hummelink for school.
+## View it on:
+### https://github.io/julescitronic/springworld
