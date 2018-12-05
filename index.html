@@ -1,18 +1,25 @@
 <html>
   <h1>Spring test</h1>
-  
   <script>
-    function test(){
-      var e = "";
-      alert(e);
+    function calculate() {
+      let massa = document.getElementById("massa").value;
+      let veerconstante = document.getElementById("veerconstante").value;
+      let uitrekking = document.getElementById("uitrekking").value;
+      
+      if (!massa || !veerconstante || !uitrekking)
+        return alert("Leeg variabel!");
+      if (isNaN(massa) || isNaN(veerconstante) || isNaN(uitrekking))
+        return alert("Fout variabel!");
+
+      console.log(`massa: ${massa}\nveerconstante: ${veerconstante}\nuitrekking: ${uitrekking}`)
     }
   </script>
-  <script src="springAPI.js"></script>
   
   <div>
-    <input type="text" placeholder="Massa" name="massText">
-    <input type="text" placeholder="veerconstante" name="veerText">
-    <input type="text" placeholder="Uitrekking" name="uirekkingText">
-    <button onClick="test();">Test</button>
+    <input id="massa" placeholder="Massa">kg<br>
+    <input id="veerconstante" placeholder="veerconstante">N/m<br>
+    <input id="uitrekking" placeholder="Uitrekking">m<br>
+    <br>
+    <button onClick="calculate();">Test</button>
   </div>
   
